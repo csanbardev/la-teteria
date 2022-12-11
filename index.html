@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- FontAwesome link -->
+  <script src="https://kit.fontawesome.com/cf73977019.js" crossorigin="anonymous"></script>
+
+  <!-- custom.css link -->
+  <link rel="stylesheet" href="css/custom.css">
+
+  <title>La tetería</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="index.html">La Tetería</a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <form class="form-inline" action="/action_page.php">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      </form>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="te.html">Té</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cafe.html">Café</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pedidos.html">Pedidos</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+
+    <!-- ============================== INICIO DEL BANNER ===================================== -->
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="carousel slide" data-ride="carousel" data-interval="3000" id="carousel-250809">
+          <ol class="carousel-indicators">
+            <li data-slide-to="0" data-target="#carousel-250809" class="active">
+            </li>
+            <li data-slide-to="1" data-target="#carousel-250809">
+            </li>
+            <li data-slide-to="2" data-target="#carousel-250809">
+            </li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100 h-75" alt="Carousel Bootstrap First"
+                src="images/drew-jemmett-qEcWgrTG578-unsplash.jpg">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 h-75" alt="Carousel Bootstrap Second"
+                src="images/nathan-dumlao-KixfBEdyp64-unsplash.jpg">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 h-75" alt="Carousel Bootstrap Third"
+                src="images/pot-head-coffee-mUzhBWRrSBw-unsplash.jpg">
+            </div>
+          </div> <a class="carousel-control-prev" href="#carousel-250809" data-slide="prev"><span
+              class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a
+            class="carousel-control-next" href="#carousel-250809" data-slide="next"><span
+              class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================== FIN DEL BANNER ===================================== -->
+    <!-- ============================== INICIO ZONA ARTÍCULOS ===================================== -->
+    <h2 class="font-weight-bold mt-4">Últimos artículos</h2>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="jumbotron">
+          <h1>Cómo hacer el mejor café: te lo explicamos</h1>
+          <p>Para hacer el mejor café solo tienes que seguir nuestro paso a paso...</p>
+          <button class="btn btn-primary">Leer más</button>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="jumbotron">
+          <h1>Aprende a elegir la tetera perfecta</h1>
+          <p>Aquí verás las teteras que más recomendamos...</p>
+          <button class="btn btn-primary">Leer más</button>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="jumbotron">
+          <h1>Beneficios del té para el cuerpo</h1>
+          <p>Te sorprenderá lo que una taza de té puede hacer por ti...</p>
+          <button class="btn btn-primary">Leer más</button>
+        </div>
+      </div>
+    </div>
+    <!-- ============================== FINAL ZONA ARTÍCULOS ===================================== -->
+
+    <!-- ============================== PRINCIPIO ZONA RESEÑAS ===================================== -->
+    <h2 class="font-weight-bold mt-4">Lo que cuentan nuestros clientes</h2>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="media border p-3">
+          <img src="images/man(1).png" alt="Jose Sánchez" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+          <div class="media-body">
+            <h4>Jose Sánchez <small><i>Publicado el 7 de diciembre, 2022</i></small></h4>
+            <p>El mejor té que he encontrado</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="media border p-3">
+          <img src="images/woman.png" alt="Ángela Domínguez" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+          <div class="media-body">
+            <h4>Ángela Domínguez <small><i>Publicado el 12 de noviembre, 2022</i></small></h4>
+            <p>Calidad-precio inmejorable</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="media border p-3">
+          <img src="images/woman(1).png" alt="Tania Urrutia" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+          <div class="media-body">
+            <h4>Tania Urrutia <small><i>Publicado el 10 de noviembre, 2022</i></small></h4>
+            <p>¡Fantástico café para el frío!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============================== FINAL ZONA RESEÑAS ===================================== -->
+
+  </div>
+
+  <!-- ============================== INICIO DEL FOOTER ===================================== -->
+  <footer class="page-footer font-small">
+
+    <!-- Footer Elements -->
+    <div class="container">
+      <!-- Grid row-->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-12 py-5 d-flex justify-content-center">
+          <div class="mb-5">
+
+            <!-- Facebook -->
+            <a class="link-footer fb-ic">
+              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="link-footer tw-ic">
+              <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="link-footer li-ic">
+              <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="link-footer ins-ic">
+              <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2022 Copyright:
+      <a class="link-footer " href="/">Lateteria.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- ============================== FIN DEL FOOTER ===================================== -->
+</body>
+
+</html>

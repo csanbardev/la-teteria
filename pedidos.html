@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- FontAwesome link -->
+  <script src="https://kit.fontawesome.com/cf73977019.js" crossorigin="anonymous"></script>
+
+  <!-- custom.css link -->
+  <link rel="stylesheet" href="css/custom.css">
+
+  <title>La tetería</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="index.html">La Tetería</a>
+    <form class="form-inline" action="/action_page.php">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    </form>
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="te.html">Té</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cafe.html">Café</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="pedidos.html">Pedidos</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ============================== INICIO DEL BANNER ===================================== -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1>Haz tu pedido con nosotros</h1>
+      <p>Tanto si te gusta el té como si te gusta el café, estás en el lugar adecuado</p>
+    </div>
+  </div>
+  <!-- ============================== FIN DEL BANNER ===================================== -->
+
+  <div class="container-fluid">
+    <div id="pedidos" class="row">
+      <div class="col-lg-6 col-sm-12">
+        <h3>Hacer mi pedido</h3>
+        <form action="#">
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" placeholder="Introduce tu nombre" id="name">
+          </div>
+          <div class="form-group">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" class="form-control" placeholder="Introduce tus apellidos" id="surname">
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-sm-12">
+              <div class="form-group">
+                <label for="calle">Dirección:</label>
+                <input type="text" class="form-control" placeholder="Introduce calle y número" id="calle">
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="form-group">
+                <label for="loc">Localidad:</label>
+                <input type="text" class="form-control" placeholder="Introduce tu localidad" id="loc">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-sm-12">
+              <div class="form-group">
+                <label for="calle">Provincia:</label>
+                <input type="text" class="form-control" placeholder="Introduce tu provincia" id="prov">
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="form-group">
+                <label for="cp">Código postal:</label>
+                <input type="number" class="form-control" placeholder="Introduce tu código postal" id="cp">
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-sm-12">
+              <div class="form-group">
+                <label class="mr-sm-2" for="inlineFormCustomSelect">Tipo de producto</label>
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                  <option selected>Producto</option>
+                  <option value="1">Café</option>
+                  <option value="2">Té</option>
+                  <option value="3">Otros</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="form-group">
+                <label for="producto">Nombre del producto:</label>
+                <input type="text" class="form-control" placeholder="Introduce el nombre del producto" id="produc">
+              </div>
+            </div>
+          </div>
+
+
+
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="submit" class="btn btn-danger">Cancelar</button>
+        </form>
+      </div>
+      <div class="col-lg-6 col-sm-12">
+        <h3>Comprobar un pedido</h3>
+        <form action="/action_page.php">
+          <div class="form-group">
+            <label for="email">Nombre completo:</label>
+            <input type="email" class="form-control" placeholder="Introduce tu nombre completo" id="nombre">
+          </div>
+          <div class="form-group">
+            <label for="np">Número de pedido:</label>
+            <input type="number" class="form-control" placeholder="Introduce tu número de pedido" id="np">
+          </div>
+          <button type="submit" class="btn btn-primary">Ver estado</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================== INICIO DEL FOOTER ===================================== -->
+  <footer class="page-footer font-small">
+
+    <!-- Footer Elements -->
+    <div class="container">
+      <!-- Grid row-->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-12 py-5 d-flex justify-content-center">
+          <div class="mb-5">
+
+            <!-- Facebook -->
+            <a class="link-footer fb-ic">
+              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="link-footer tw-ic">
+              <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="link-footer li-ic">
+              <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="link-footer ins-ic">
+              <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2022 Copyright:
+      <a class="link-footer " href="/">Lateteria.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- ============================== FIN DEL FOOTER ===================================== -->
+</body>
+
+</html>

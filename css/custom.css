@@ -1,0 +1,23 @@
+body{
+  font-family: 'Playfair Display', serif !important;
+}
+
+
+footer{
+  background: #343a40;
+  margin-top: 8rem;
+  color: white;
+}
+
+.link-footer{
+  text-decoration: none;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  #pedidos{
+    gap: 5rem;
+  }
+}
+
